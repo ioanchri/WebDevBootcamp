@@ -1,0 +1,11 @@
+
+<div style="background-color:powderblue; class="div">
+    <h1>Here are the results for your search: <%= query %> </h1>
+</div>
+
+
+ <% results["Search"].forEach(function(movie){ %>
+
+    <li><strong> <%= movie["Title"]%> - (<%= movie["Year"] %>)  </strong><div style="text-align: center"></div><img src="<%= movie["Poster"] %>" alt="" width="200" height="300" ></div>   </li>
+<% }) %>
+<h2 str ><a href="/"color="red" >Search again!</a></h2>

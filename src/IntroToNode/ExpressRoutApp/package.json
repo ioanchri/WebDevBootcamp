@@ -1,0 +1,14 @@
+{
+  "name": "expressroutapp",
+  "version": "1.0.0",
+  "description": "This is a routing app",
+  "main": "app.js",
+  "scripts": {
+    "test": "Hey"
+  },
+  "author": "John Chris",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
