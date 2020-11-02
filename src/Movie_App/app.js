@@ -21,7 +21,7 @@ app.get("/",(req, res) =>{
 
   app.get("/results",(req,res) =>{
     var query = req.query.search;
-    request("http://www.omdbapi.com/?s=" + query + "&apikey=thewdb",function(error,response,body){
+    request(`http://www.omdbapi.com/?s=${query}&apikey=thewdb`,function(error,response,body){
     if(!error && response.statusCode == 200){
         var results =JSON.parse(body)
         res.render("results",{results:results, query:query });
